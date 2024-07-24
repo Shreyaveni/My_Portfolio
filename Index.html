@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="Style.css">
+     <script src="https://kit.fontawesome.com/65a0b7524d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark close-icon" id="menu" onclick="closePage()"></i>
+                </ul>
+                <!-- <i class="fa-solid fa-bars menu-icon" onclick="openMenu()"></i> -->
+            </nav>
+            <div class="header-text">
+                <p><span>S</span>oftware <span>E</span>ngineer</p>
+                <h1>Hi I'm <span>Shreyaveni Thota</span><br> From Maharashtra</h1>
+            </div>
+        </div>
+</div>
+<script>
+    function closePage() {
+        document.body.innerHTML = '<h1>NULL</h1>';
+        document.body.classList.add('centered-page');
+    }
+</script>
+<!-- ----------------------About-------------------------- -->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/images/user.jpg" height="500px" width="1000px">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="text">
+                    Hello Folks !!!<br> I'm Shreyaveni Venkatesh Thota currently pursuing my B.Tech in Computer Science from Government College of Engineering, Amravati.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Technical Expertise')">Technical Expertise</p>
+                    <p class="tab-links " onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                </div>
+                <div class="tab-content active-tab" id="Technical Expertise">
+                <ul>
+                    <li><span>Languages</span><br>C, C++, Java (Basics), Python,HTML, CSS</li>
+                     <li><span>Skills</span><br>Proficient in JavaScript, Node.js, Express.js
+                        <br> Experience with server-side development<br></li>
+                      <li><span>Core Subjects</span><br>OOP, MySQL, DSA,OS,DBMS,CN</li>
+                </ul>
+                </div>
+                 <div class="tab-content" id="education">
+                <ul>
+                    <li><span>B.Tech in Computer Science</span><br>Government College of Engineering, Amravati</li>
+                    <li><span>HSC </span><br>Sri chaitanya Junior College, Hyderabad</li>
+                    <li><span>SSC </span><br>Mount Carmel Convent Senior Secondary School</li>
+                </ul>
+                </div>
+                <div class="tab-content" id="achievements">
+                <ul>
+                    <li><span>Siemens Scholar</span><br>Among Top 200 Students from Govt. Engg. Colleges in India.</li>
+                    <li><span>150+ Problems Solved</span><br>Solved 150+ problems on coding platforms like Leetcode,CodeStudio</li>
+                    <li><span>Tabble Tenis runner up</span><br> Secured Second prize</li>
+                </ul>
+                </div> 
+                <div class="tab-content" id="Experience">
+                    <ul>
+                        <li><span>Technical Intern at STSPL   (June 2023 – August 2023)</span><br> - Developed a web application for interactive polygon creation using fabric.js, Node.js and express.js for server-side operations.
+                            <br>- Managed data persistence with JSON files and integrated with frontend frameworks and handled server-client interactions.</li>
+                    </ul>
+                    </div> 
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------------Projects-------------------- -->
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="Projects-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>E-Commerce Website</h2>
+            <h2>(React js, HTML, CSS, JavaScript)</h2>
+            <p class="text2">
+                It is a responsive webpage containing nice animation. Contains a well authenticated contact, login and
+                signup froms Contains many categories regarding clothes. A nice Footer.Authenticated Payment Page.
+                A nice Cart Page
+            </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-code"></i>
+            <h2>Python Game Collection </h2>
+            <h2>(Python)</h2>
+         <p class="text2"> Developed a collection of Python-based games, including the Snake Water Gun game and a Random
+            Number Guess game, featuring user interaction, input validation, and feedback mechanisms to create
+            engaging and interactive experiences.</p>
+        </div>
+        <div>        
+            <i class="fa-solid fa-code"></i>
+            <h2>My Portfolio</h2>
+            <h2>(HTML, CSS)</h2>
+         <p class="text2">Developed a responsive portfolio website <br>Implemented interactive features for enhanced user engagement and experience. <br>
+            <br><br><a href="https://shivani-863.github.io/My_Portfolio/Index" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+         </p>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------------contact----------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>shreyavenithota2468@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>7972609247</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Shreyaveni/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shreyaveni-thota-a06aa822a" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/shreya_vni?igsh=NHBjZzBwMDdsaDZy" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="Images/images/Shreyaveni_thota_Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Shreyaveni. Made with <i class="fa-solid fa-heart"></i> Shreyaveni Thota</p>
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-content");
+    function opentab(tabname){
+         for(tablink of tablinks)
+         {
+            tablink.classList.remove("active-link");
+         }
+          for(tabcontent of tabcontents)
+         {
+            tabcontent.classList.remove("active-tab");
+         }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemen=document.getElementById("sidemenu");
+    function openmenu()
+    {
+        sidemen.style.right="0";
+    }
+    function closemenu()
+    {
+        sidemen.style.right="-200px";
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyCtKpca6gOQ0Etp0nFJ3Q9ANKvOWCazj2cRW0obW7cS2pd5Mce4pJZTFVe9nEvevLn/exec'
+  const form = document.forms['submit-to-google-sheet']
+ const msg=document.getElementById("msg");
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML= "Message sent Successfully!!"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
