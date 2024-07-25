@@ -289,44 +289,101 @@ form .btn2{
 }
 /* -----------css for small screens------------ */
 @media only screen and (max-width: 768px) {
+    /* #header{
+        background-image: url(Images/images/Phone_Background.jpg);
+    } */
     .container {
         padding: 10px;
     }
+
+    .logo {
+        max-width: 80%;
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: column; /* Stacks image and text vertically */
+        align-items: center;
+    }
+
+    .header-image {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+        object-fit: cover; /* Ensure the image covers the container */
+        height: 100vh;
+    }
+    
+    .header-text h1  {
+        padding-top: 270px;
+        color: black;
+        /* display: none; Hide the line break and following text on mobile */
+    }
+
     .header-text {
         font-size: 1rem;
-        margin-top: 20%;
+        margin-top: 10px; /* Space between image and text */
     }
+
+    .header-text p, .header-text h1 {
+        text-align: center;
+    }
+
     .header-text h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
+
     nav ul {
+        padding-left: 13px;
         flex-direction: column;
-        align-items: flex-start;
-        background: #16a085;
+        align-items: flex-end;
+        background: #2980b9;
         position: fixed;
         top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
+        right: 0;
+        width: 130px;
+        height: 280px;
+        padding-top: 5px;
         z-index: 2;
         transition: right 0.5s;
+        overflow-y: scroll; /* Enable vertical scrolling */
+        max-height: 100vh;
     }
+
     nav ul li {
         display: block;
         margin: 25px 0;
     }
+
     nav .fa-solid {
         font-size: 25px;
     }
+
     .about-col-1, .about-col-2 {
         flex-basis: 100%;
         margin: 20px 0;
     }
+
     .Projects-list {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
+
     .contact-left, .contact-right {
         flex-basis: 100%;
     }
+
+    /* Ensure the background image covers the whole viewport */
+    html, body {
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
 }
+
+
+
