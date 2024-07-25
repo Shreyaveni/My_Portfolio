@@ -116,7 +116,7 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 70px;
     font-family:'Times New Roman',Times, serif;
-    color: #2980b9; /* Dark blue */
+    color: #2980b9; 
 }
 .text{
     word-spacing: 4px;
@@ -133,13 +133,13 @@ nav ul li a:hover::after{
     font-weight: bold;
     cursor:pointer;
     position:relative;
-    color: #073f64; /* Teal */
+    color: #073f64; 
 }
 .tab-links::after{
     content: '';
     width: 0;
     height: 3px;
-    background:#2980b9; /* Darker teal */
+    background:#2980b9; 
     position: absolute;
     bottom: -8px;
     left:0;
@@ -153,7 +153,7 @@ nav ul li a:hover::after{
     margin:10px 0;
 }
 .tab-content ul li span{
-    color: #2980b9; /* Dark blue */
+    color: #2980b9; 
     font-size: 16px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
@@ -183,7 +183,7 @@ h2{
 .Projects-list div{
     color: #ffffff;
     padding:40px;
-    background:#2980b9; /* Red */
+    background:#2980b9; 
     font-size:13px;
     font-weight:300;
     border-radius:10px;
@@ -287,11 +287,14 @@ form .btn2{
     margin-top:-40px;
     display:block;
 }
+nav .fas{
+    display: none;
+}
 /* -----------css for small screens------------ */
 @media only screen and (max-width: 768px) {
-    /* #header{
-        background-image: url(Images/images/Phone_Background.jpg);
-    } */
+    nav .fas{
+        display: block;
+    }
     .container {
         padding: 10px;
     }
@@ -302,7 +305,7 @@ form .btn2{
 
     .header-content {
         display: flex;
-        flex-direction: column; /* Stacks image and text vertically */
+        flex-direction: column; 
         align-items: center;
     }
 
@@ -312,19 +315,18 @@ form .btn2{
         max-width: 100%;
         display: block;
         margin: 0 auto;
-        object-fit: cover; /* Ensure the image covers the container */
+        object-fit: cover; 
         height: 100vh;
     }
     
     .header-text h1  {
         padding-top: 270px;
         color: black;
-        /* display: none; Hide the line break and following text on mobile */
     }
 
     .header-text {
         font-size: 1rem;
-        margin-top: 10px; /* Space between image and text */
+        margin-top: 10px; 
     }
 
     .header-text p, .header-text h1 {
@@ -335,7 +337,7 @@ form .btn2{
         font-size: 1.5rem;
     }
 
-    nav ul {
+    /* nav ul {
         padding-left: 13px;
         flex-direction: column;
         align-items: flex-end;
@@ -348,13 +350,28 @@ form .btn2{
         padding-top: 5px;
         z-index: 2;
         transition: right 0.5s;
-        overflow-y: scroll; /* Enable vertical scrolling */
+        overflow-y: scroll; 
         max-height: 100vh;
+    } */
+    nav ul{
+        background-color: #2980b9;
+        position: fixed;
+        top: 0;
+        right: -220px;
+        width: 220px;
+        height: 300px;
+        padding-top: 50px;
+        z-index: 2;
     }
-
     nav ul li {
         display: block;
-        margin: 25px 0;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
     }
 
     nav .fa-solid {
@@ -374,7 +391,6 @@ form .btn2{
         flex-basis: 100%;
     }
 
-    /* Ensure the background image covers the whole viewport */
     html, body {
         background-size: cover;
         background-position: center;
