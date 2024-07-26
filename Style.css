@@ -291,6 +291,7 @@ nav .fas{
     display: none;
 }
 /* -----------css for small screens------------ */
+
 @media only screen and (max-width: 768px) {
     #header {
         background-image: url(Images/images/PBG.jpg);
@@ -327,7 +328,7 @@ nav .fas{
     }
 
     .header-text {
-        padding-top: 250px;
+        padding-top: 450px;
         color: white;
         font-size: 1rem;
         margin-top: 10px; 
@@ -376,6 +377,15 @@ nav .fas{
     .about-col-1, .about-col-2 {
         flex-basis: 100%;
         margin: 20px 0;
+    }
+
+    #About {
+        overflow-x: auto; 
+        overflow-y: hidden; 
+    }
+    
+    .container {
+        padding: 10px;
     }
 
     .Projects-list {
